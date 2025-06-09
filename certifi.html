@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Certifications</title>
+    
+    <!-- Boxicons for Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Root Variables */
+        :root {
+            --bg-color: #1f1f21;
+            --text-color: #ffffff;
+            --main-color: #ffae00;
+            --secondary-color: #333;
+            --big-font: 2rem;
+            --p-font: 1.1rem;
+        }
+
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+
+        /* Section Titles */
+        h2 {
+            text-align: center;
+            margin-top: 80px;
+            font-size: var(--big-font);
+            color: var(--main-color);
+        }
+
+        /* Certifications Section */
+        .certifications-section {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .certifications-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .cert-card {
+            background: #2a2a2c;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(255, 174, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .cert-card:hover {
+            transform: scale(1.1);
+        }
+
+        .cert-icon {
+            font-size: 40px;
+            color: var(--main-color);
+            margin-bottom: 10px;
+        }
+
+        .cert-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .cert-provider {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+
+        .cert-desc {
+            font-size: var(--p-font);
+            color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="sklogo">
+            <h1>Certifications</h1>
+        </a>
+    </header>
+
+    <!-- Certifications Section -->
+    <h2>Certifications</h2>
+    <section class="certifications-section">
+        <div class="certifications-container">
+            <div class="cert-card">
+                <i class='bx bx-certification cert-icon'></i>
+                <div class="cert-title">Python for Data Science</div>
+                <div class="cert-provider">Issued by IBM</div>
+                <!-- <p class="cert-desc">Completed a comprehensive course on full-stack web development using MERN stack.</p> -->
+            </div>
+
+            <div class="cert-card">
+                <i class='bx bx-lock cert-icon'></i>
+                <div class="cert-title">Introduction To IOT</div>
+                <div class="cert-provider">Issued by NPTEL</div>
+                <!-- <p class="cert-desc">Learned network security fundamentals, firewalls, and ethical hacking concepts.</p> -->
+            </div>
+
+            <div class="cert-card">
+                <i class='bx bx-brain cert-icon'></i>
+                <div class="cert-title">Introduction to Cloud Computing</div>
+                <div class="cert-provider">Issued by NPTEL</div>
+                <!-- <p class="cert-desc">Hands-on experience in building ML models using Python libraries like TensorFlow & Scikit-Learn.</p> -->
+            </div>
+
+            <div class="cert-card">
+                <i class='bx bx-data cert-icon'></i>
+                <div class="cert-title">Introduction to Python Programming</div>
+                <div class="cert-provider">Issued by Solo Learn</div>
+                <!-- <p class="cert-desc">Explored big data analytics, data visualization, and predictive modeling techniques.</p> -->
+            </div>
+
+            <div class="cert-card">
+                <i class='bx bx-globe cert-icon'></i>
+                <div class="cert-title">C Programming</div>
+                <div class="cert-provider">Issued by Skillrack</div>
+                <!-- <p class="cert-desc">Gained expertise in Google Cloud services, Kubernetes, and cloud computing architectures.</p> -->
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
